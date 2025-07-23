@@ -1,0 +1,115 @@
+body {
+    background-color: #b2b4b7; /* Abu-abu yang sedikit lebih terlihat */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Kustomisasi Navbar */
+.navbar.bg-dark {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Judul Halaman */
+.page-title-section {
+    /* Menambahkan gambar latar belakang dengan lapisan gelap agar tulisan terbaca */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../foto/sepatu5.jpg');
+    
+    /* Properti untuk memastikan gambar tampil dengan baik */
+    background-size: cover;
+    background-position: center;
+    
+    /* Mengubah warna teks utama menjadi putih */
+    color: white; 
+}
+
+/* Mengubah warna sub-teks (text-muted) menjadi lebih terang */
+.page-title-section .text-muted {
+    color: #f1f1f1 !important; 
+}
+
+/* Sidebar Filter */
+.sidebar .card {
+    border: 1px solid #e0e0e0;
+    box-shadow: none;
+}
+.sidebar .card-header {
+    background-color: #fff;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+}
+.sidebar .list-group-item {
+    border: none;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+.sidebar .list-group-item:hover {
+    background-color: #f1f1f1;
+    transform: translateX(5px);
+}
+.sidebar .list-group-item.active {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 500;
+}
+
+
+/* Kartu Produk */
+.product-card {
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden; /* Agar gambar tidak keluar dari border-radius */
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+.product-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Memastikan gambar terisi penuh tanpa distorsi */
+}
+.product-card .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    min-height: 40px; /* Menjaga tinggi judul agar seragam */
+}
+.product-card .card-text {
+    font-size: 0.85rem;
+}
+.product-card .card-subtitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0d6efd;
+}
+.product-card .btn-primary {
+    font-weight: 500;
+}
+
+/* Kontrol Atas (Sortir) */
+.controls-bar {
+    border: 1px solid #e0e0e0;
+}
+/* ===== TEMA WARNA BARU (COKLAT) ===== */
+
+/* Mengubah warna tombol utama */
+.btn-primary {
+    background-color: #8B5A2B; /* Warna Coklat */
+    border-color: #8B5A2B;
+}
+
+/* Mengubah warna tombol saat disentuh mouse */
+.btn-primary:hover {
+    background-color: #714922; /* Coklat lebih gelap */
+    border-color: #714922;
+}
+
+/* Mengubah warna kategori yang aktif di sidebar */
+.sidebar .list-group-item.active {
+    background-color: #8B5A2B;
+    border-color: #8B5A2B;
+}
+
+/* Mengubah warna harga agar serasi */
+.product-card .card-subtitle {
+    color: #8B5A2B;
+}

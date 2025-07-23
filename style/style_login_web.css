@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Pengaturan Dasar */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Kontainer Utama */
+.login-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Panel Kiri diberi animasi meluncur dari kiri */
+.left-panel {
+    flex: 1.5;
+    background-color: #1d4d3d;
+    position: relative;
+    clip-path: path('M 0 0 H 80% C 95% 25%, 75% 75%, 90% 100% H 0 Z');
+    animation: slideInFromLeft 0.8s ease-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-panel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    animation: fadeInSlideUp 0.6s ease-out 0.8s forwards;
+    opacity: 0;
+}
+
+.welcome-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.welcome-text p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Panel Kanan diberi animasi meluncur dari kanan */
+.right-panel {
+    flex: 1;
+    background-color: #1d4d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+/* Formulir Login */
+.login-form {
+    width: 100%;
+    max-width: 380px;
+    color: #fff;
+}
+
+/* ==== Elemen Form diberi animasi fade-in dan slide-up secara berurutan ==== */
+.login-form h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    animation: fadeInSlideUp 0.6s ease-out 1.0s forwards;
+    opacity: 0; 
+}
+
+.role-selector {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+    animation: fadeInSlideUp 0.6s ease-out 1.2s forwards;
+    opacity: 0;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    animation: fadeInSlideUp 0.6s ease-out 1.4s forwards;
+    opacity: 0;
+}
+
+.login-button {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background-color: #4a7862;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    animation: fadeInSlideUp 0.6s ease-out 1.6s forwards;
+    opacity: 0;
+}
+
+/* ============================================= */
+/* === STYLE BARU UNTUK LINK REGISTRASI === */
+/* ============================================= */
+.register-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #c4d1cb; /* Warna soft */
+    
+    /* Animasi, muncul paling terakhir */
+    animation: fadeInSlideUp 0.6s ease-out 1.8s forwards;
+    opacity: 0;
+}
+
+.register-link a {
+    color: #fff; /* Warna link lebih terang */
+    font-weight: 600;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Efek hover */
+}
+/* ============================================= */
+
+
+/* Style yang tidak perlu animasi (tetap sama) */
+.role-btn {
+    flex: 1;
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid #4a7862;
+    color: #c4d1cb;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.role-btn:hover {
+    background-color: #3e6b5b;
+    color: #fff;
+}
+
+.role-btn.active {
+    background-color: #c4d1cb;
+    color: #1d4d3d;
+    border-color: #c4d1cb;
+    font-weight: 600;
+}
+
+.error-message, .success-message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+.error-message { background-color: #ff4d4d; color: #fff; }
+.success-message { background-color: #4caf50; color: #fff; }
+
+.input-group .icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #c4d1cb;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 20px 14px 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #3e6b5b;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-group input::placeholder {
+    color: #c4d1cb;
+    opacity: 1;
+}
+
+.login-button:hover {
+    background-color: #3e6351;
+}
+
+
+/* === DEFINISI ANIMASI (TETAP SAMA) === */
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
