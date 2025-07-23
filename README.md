@@ -15,7 +15,6 @@ Aplikasi ini sudah di-hosting dan dapat diakses melalui link berikut:
   * Manajemen penuh data produk sepatu (Tambah, Edit, Hapus).
   * Melihat dan menghapus semua pesan & tanggapan dari customer.
   * Melihat dan menghapus laporan keuangan (transaksi yang sudah lunas).
-  * Fitur download laporan keuangan dalam format PDF.
 
 #### **✅ Petugas**
 
