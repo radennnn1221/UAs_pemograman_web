@@ -5,7 +5,7 @@ Aplikasi e-commerce sederhana yang dibangun menggunakan PHP Native dengan sistem
 ### 🌐 Demo Online
 
 Aplikasi ini sudah di-hosting dan dapat diakses melalui link berikut:
-**(http://kenzoo-store.my.id/toko_sepatu/login_web.php)]([https://www.google.com/search?q=http://kenzoo-store.my.id](http://kenzoo-store.my.id/toko_sepatu/login_web.php))**
+**(http://kenzoo-store.my.id/toko_sepatu/login_web.php))**
 
 ###  !Fitur Utama
 
